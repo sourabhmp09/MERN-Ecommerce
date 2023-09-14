@@ -8,7 +8,7 @@ import "regenerator-runtime/runtime";
 import { Doughnut, Line } from "react-chartjs-2";
 // import { Doughnut } from 'react-chartjs-2';
 
-
+import Chart from 'chart.js/auto';
 
 import { useSelector, useDispatch } from "react-redux";
 import { getAdminProduct } from "../../actions/productAction";
