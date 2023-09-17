@@ -9,12 +9,14 @@ const Profile = ({ history }) => {
 const navigate=useNavigate();
 
   const { user, loading, isAuthenticated } = useSelector((state) => state.user);
-console.log( user, loading, isAuthenticated);
+// console.log( user, loading, isAuthenticated);
 
-const isGoal = <img src={user.avatar.url} alt={user.name} />
+if (  user .avatar ){
+  var isGoal = <img src={user.avatar.url} alt={user.name} />
+}
+// var isGoal = <img src={user.avatar.url} alt={user.name} />
 const Yesimg=()=>(<img src={user.avatar.url} alt={user.name} />    );
-const Noimg=()=>(<p>no img please upload</p>    );
-
+const Noimg=()=>(<h4>No img please upload</h4>    );
   ;
 
 
